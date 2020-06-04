@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alexandra Pshebitkovskaya](https://up.htmlacademy.ru/htmlcss/28/user/870593).
-* Наставник: `Неизвестно`.
+* Наставник: `без наставника`.
 
 ---
 
