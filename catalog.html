@@ -37,7 +37,84 @@
 
 <!-- MAIN -->
   <main>
+    <h1 class="visually-hidden">Подбор отеля</h1>
 
+    <!-- FILTER -->
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+
+      <div class="filter__options">
+        <form action="https://echo.htmlacademy.ru" method="GET" class="options__form">
+
+          <fieldset class="first-option">
+            <legend class="optionS__legend">Инфраструктура:</legend>
+            <ul class="options__list">
+              <li>
+                <input type="checkbox" name="pool" id="pool">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="second-option">
+            <legend class="option-legend">Тип жилья:</legend>
+            <ul class="filter__options-list">
+              <li>
+                <input type="checkbox" name="hotel" id="hotel">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel">
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="apartments">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="third-option">
+            <legend class="option-legend">Стоимомть в сутки (р):</legend>
+          </fieldset>
+
+        </form>
+      </div>
+
+      <!-- SORTING -->
+      <div class="sorting">
+
+        <span class="sorting__results">Найдено: 3</span>
+
+        <div class="sorting__options">
+          <span>Сортировка:</span>
+          <a href="" class="price">По цене</a>
+          <a href="" class="type">По типу</a>
+          <a href="" class="raiting">По рейтингу</a>
+        </div>
+
+        <div class="sorting__pointers">
+          <a href="" class="pointer pointer-up">
+            <p class="visually-hidden">Вверх</p>
+          </a>
+          <a href="" class="pointer pointer-down">
+            <p class="visually-hidden">Вниз</p>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- RESULTS -->
     <section class="results">
 
       <ul class="results__list">
