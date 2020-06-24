@@ -86,7 +86,22 @@
 
           <fieldset class="third-option">
             <legend class="option-legend">Стоимомть в сутки (р):</legend>
+            <div>
+              <label>От
+                <input type="number" name="" value="0">
+              </label>
+              <label>До
+                <input type="number" name="" value="3000">
+              </label>
+            </div>
+            <div>
+              <input type="range" name="">
+              <div class="bar"></div>
+              <input type="range" name="">
+            </div>
           </fieldset>
+
+          <button type="submit">Показать</button>
 
         </form>
       </div>
@@ -98,16 +113,22 @@
 
         <div class="sorting__options">
           <span>Сортировка:</span>
-          <a href="" class="price" aria-label="Отсортировать по цене">По цене</a>
-          <a href="" class="type" aria-label="Отсортировать по типу">По типу</a>
-          <a href="" class="raiting" aria-label="Отсортировать по рейтингу">По рейтингу</a>
+          <ul>
+            <li>
+              <a href="" class="price" aria-label="Отсортировать по цене">По цене</a>
+            </li>
+            <li>
+              <a href="" class="type" aria-label="Отсортировать по типу">По типу</a>
+            </li>
+            <li>
+              <a href="" class="raiting" aria-label="Отсортировать по рейтингу">По рейтингу</a>
+            </li>
+          </ul>
         </div>
 
         <div class="sorting__pointers">
-          <a href="" class="pointer pointer-up" aria-label="Снизу вверх">
-          </a>
-          <a href="" class="pointer pointer-down" aria-label="Сверху вниз">
-          </a>
+          <a href="" class="pointer pointer-up" aria-label="Отсортировать снизу вверх"></a>
+          <a href="" class="pointer pointer-down" aria-label="Отсортировать сверху вниз"></a>
         </div>
 
       </div>
@@ -117,7 +138,6 @@
     <!-- RESULTS -->
     <section class="results">
       <h2 class="visually-hidden">Список отелей</h2>
-
 
       <ul class="results__list">
 
