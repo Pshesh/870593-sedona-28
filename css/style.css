@@ -67,8 +67,11 @@ img {
 
 /* NAVIGATION */
 
-.nav {
+.header {
     background-color: var(--basic-white);
+}
+
+.nav {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
