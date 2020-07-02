@@ -10,7 +10,9 @@
 </head>
 
 <body>
-  <!-- HEADER -->
+
+  <div class="wrapper">
+      <!-- HEADER -->
   <header class="header">
 
     <nav class="nav">
@@ -32,7 +34,7 @@
 
       <div>
         <a href="index.html" aria-label="Ссылка на главную страницу">
-          <img src="img/logo-sedona.png" width="138" height="70" alt="" class="navigation__logo">
+          <img class="nav__logo" src="img/logo-sedona.png" width="138" height="70" alt="">
         </a>
       </div>
 
@@ -49,60 +51,62 @@
       <h2 class="visually-hidden">Фильтр</h2>
 
       <div class="filter__option">
-        <form action="https://echo.htmlacademy.ru" method="POST" class="option__form">
+        <form class="option__form" action="https://echo.htmlacademy.ru" method="POST">
 
-          <fieldset class="first-option">
-            <legend class="option__legend">Инфраструктура:</legend>
-            <ul class="option__list">
-              <li>
-                <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
-              </li>
-              <li>
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi">
-                <label for="wi-fi">wi-fi</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="second-option">
-            <legend class="option__legend">Тип жилья:</legend>
-            <ul class="option__list">
-              <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </li>
-              <li>
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="third-option">
-            <legend class="option__legend">Стоимомть в сутки (р):</legend>
-            <div>
-              <label>От
-                <input type="number" name="" value="0">
-              </label>
-              <label>До
-                <input type="number" name="" value="3000">
-              </label>
-            </div>
-            <div>
-              <input type="range" name="">
-              <div class="bar"></div>
-              <input type="range" name="">
-            </div>
-          </fieldset>
+          <div class="fieldset-container">
+            <fieldset class="first-option">
+              <legend class="option__legend">Инфраструктура:</legend>
+              <ul class="option__list">
+                <li>
+                  <input type="checkbox" name="pool" id="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" id="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wi-fi" id="wi-fi">
+                  <label for="wi-fi">wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+  
+            <fieldset class="second-option">
+              <legend class="option__legend">Тип жилья:</legend>
+              <ul class="option__list">
+                <li>
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+  
+            <fieldset class="third-option">
+              <legend class="option__legend">Стоимомть в сутки (р):</legend>
+              <div class="third-option__numbers">
+                <label>От
+                  <input type="number" name="" value="0">
+                </label>
+                <label>До
+                  <input type="number" name="" value="3000">
+                </label>
+              </div>
+              <div>
+                <input type="range" name="">
+                <div class="bar"></div>
+                <input type="range" name="">
+              </div>
+            </fieldset>
+          </div>
 
           <button type="submit">Показать</button>
 
@@ -181,7 +185,7 @@
         </li>
 
         <!-- SECOND HOTEL -->
-        <li class="results__item">
+        <li class="results__item second-hotel">
 
           <div class="hotel__photo">
             <img src="img/picture-motel.jpg" width="135" height="90" alt="Фото мотеля">
@@ -209,7 +213,7 @@
         </li>
 
         <!-- THIRD HOTEL -->
-        <li class="results__item">
+        <li class="results__item third-hotel">
 
           <div class="hotel__photo">
             <img src="img/picture-apartaments.jpg" width="135" height="90" alt="Фото апартаментов">
@@ -292,6 +296,8 @@
     </p>
 
   </footer>
+
+  </div>
 
 </body>
 
