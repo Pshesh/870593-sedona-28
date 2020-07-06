@@ -63,6 +63,7 @@ img {
 }
 
 .wrapper {
+    position: relative;
     max-width: 1200px;
     width: 100%;
     min-height: 100%;
@@ -91,11 +92,11 @@ input[type="radio"].visually-hidden {
 
 .header {
     background-color: var(--basic-white);
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .nav {
-    padding-left: 73px;
-    padding-right: 72px;
     position: relative;
     font-size: 14px;
     line-height: 26px;
@@ -105,7 +106,7 @@ input[type="radio"].visually-hidden {
 .nav__list {
     margin: 0;
     padding: 0;
-    list-style: none ;
+    list-style: none;
 
     display: flex;
     flex-wrap: wrap;
@@ -116,21 +117,13 @@ input[type="radio"].visually-hidden {
 }
 
 .nav__item {
-    width: 135px;
+    width: 228px;
     padding-top: 14px;
     padding-bottom: 16px;
 }
 
-.nav__item:first-child {
-    margin-right: 92px;
-}
-
 .nav__item:nth-child(2) {
-    margin-right: 325px;
-}
-
-.nav__item:nth-child(3) {
-    margin-right: 86px;
+    margin-right: 138px;
 }
 
 .nav__item--left {
@@ -160,7 +153,6 @@ input[type="radio"].visually-hidden {
     left: 50%;
     top: 0;
     margin-left: -69px;
-    z-index: 2;
 }
 
 
@@ -175,6 +167,14 @@ input[type="radio"].visually-hidden {
     justify-content: space-around;
     align-items: center;
     background-color: var(--basic-white);
+}
+
+.footer--main {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .footer__contacts {
@@ -570,10 +570,14 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.search__item:first-child,
-.search__item:nth-child(2) {
+.search__item:first-child {
     width: 458px;
     margin-bottom: 29px;
+}
+
+.search__item:nth-child(2) {
+    width: 458px;
+    margin-bottom: 30px;
 }
 
 .search__item:nth-child(3) {
@@ -587,14 +591,19 @@ input[type="radio"].visually-hidden {
 .search__item input {
     background-color: var(--basic-white-dark);
     border: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: var(--basic-black);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 .search__item:first-child input,
 .search__item:nth-child(2) input {
     width: 346px;
-    padding-left: 12px;
+    padding-left: 13px;
 }
 
 .search__item:nth-child(3) input,
@@ -628,26 +637,21 @@ input[type="radio"].visually-hidden {
 
 .search__item:nth-child(3) .minus-button {
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 125px;
 }
 
-.search__item:nth-child(3) .plus-button {
+.search__item:nth-child(3) .plus-button,
+.search__item:nth-child(4) .plus-button {
     position: absolute;
-    top: 10px;
+    top: 11px;
     right: 10px;
 }
 
 .search__item:nth-child(4) .minus-button {
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 79px;
-}
-
-.search__item:nth-child(4) .plus-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
 }
 
 .plus-img:hover path,
@@ -658,39 +662,39 @@ input[type="radio"].visually-hidden {
 .plus-img:active path,
 .minus-img:active rect {
     fill: var(--basic-blue);
-    /* не работает */
-    outline: none;
+    /* не работвет */
+    border: none;
 }
 
-input::-moz-placeholder {
+.search__item input::-moz-placeholder {
     color: var(--basic-black);
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
 }
 
-input::-webkit-input-placeholder { 
+.search__item input::-webkit-input-placeholder { 
     color: var(--basic-black);
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
 }
 
-input:-ms-input-placeholder {  
+.search__item input:-ms-input-placeholder {  
     color: var(--basic-black);
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
 }
 
-input::-ms-input-placeholder {  
+.search__item input::-ms-input-placeholder {  
     color: var(--basic-black);
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
 }
 
-input::placeholder {
+.search__item input::placeholder {
     color: var(--basic-black);
     font-weight: 700;
     line-height: 26px;
@@ -715,7 +719,7 @@ input[name="children_number"] {
 
     background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 100%, 100%;
 }
 
 .fieldset-container {
