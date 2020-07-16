@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min.css">
 </head>
 
 <body>
@@ -58,15 +58,15 @@
                 <legend class="option__legend">Инфраструктура:</legend>
                 <ul class="option__list">
                   <li>
-                    <input type="checkbox" name="pool" id="pool" checked>
+                    <input class="visually-hidden checkbox" type="checkbox" name="pool" id="pool" checked>
                     <label for="pool">Бассейн</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="parking" id="parking">
+                    <input class="visually-hidden checkbox" type="checkbox" name="parking" id="parking">
                     <label for="parking">Парковка</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                    <input class="visually-hidden checkbox" type="checkbox" name="wi-fi" id="wi-fi">
                     <label for="wi-fi">wi-fi</label>
                   </li>
                 </ul>
@@ -76,31 +76,30 @@
                 <legend class="option__legend">Тип жилья:</legend>
                 <ul class="option__list">
                   <li>
-                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <input class="visually-hidden checkbox" type="checkbox" name="hotel" id="hotel" checked>
                     <label for="hotel">Гостиница</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="motel" id="motel" checked>
+                    <input class="visually-hidden checkbox" type="checkbox" name="motel" id="motel" checked>
                     <label for="motel">Мотель</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="apartments" id="apartments" checked>
+                    <input class="visually-hidden checkbox" type="checkbox" name="apartments" id="apartments" checked>
                     <label for="apartments">Апартаменты</label>
                   </li>
                 </ul>
               </fieldset>
 
               <fieldset class="third-option">
-                <legend class="option__legend">Стоимомть в сутки (р):</legend>
+                <legend class="option__legend">Стоимоcть в сутки (р):</legend>
                 <div class="range-filter">
                   <div class="price-controls">
-                    <label class="min-price">От
-                      <input type="number" name="min-price" value="0">
+                    <label class="min-price">
+                      От <input type="number" name="min-price" value="0" step="100" aria-label="Укажите минимальную цену">
                     </label>
-                    <label class="max-price">До
-                      <input type="number" name="max-price" value="3000">
+                    <label class="max-price">
+                      До <input type="number" name="max-price" value="3000" step="100" aria-label="Укажите максимальную цену">
                     </label>
-                    <div class="border"></div>
                   </div>
                   <div class="range-controls">
                     <div class="scale">
